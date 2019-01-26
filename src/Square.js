@@ -14,7 +14,6 @@ class Square {
   }
 }
 
-
 // function Square (size) {
 //   this.size = size
 // }
