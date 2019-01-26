@@ -7,6 +7,7 @@
 //         throw new Error('size should be a positive number');
 //     }
 //     this.size = size;
+// this.array = ["I'm contained in an array!"]
 //   }
 
 //   area() {
@@ -22,6 +23,7 @@ function Square (size) {
       throw new Error('size should be a positive number');
   }
   this.size = size
+  this.array = ["I'm contained in an array!"]
 }
 
 Square.prototype.area = function () {

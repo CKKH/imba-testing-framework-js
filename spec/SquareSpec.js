@@ -23,4 +23,8 @@ describe('Square', () => {
     expect(square).toThrowError('size should be a positive number')
   })
 
+  it('contains an array with a message', () => {
+    let square = new Square(5)
+    expect(square.array).toContain("I'm contained in an array!")
+  })
 })
