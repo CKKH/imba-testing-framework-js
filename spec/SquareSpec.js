@@ -10,7 +10,17 @@ describe('Square', () => {
   it('.area calulates surface area', () => {
     let square = new Square(5)
     let surfaceArea = square.area()
-    console.log(surfaceArea)
     expect(surfaceArea).toEqual(25)
   })
+
+  it('throws an error if instantiated with a non number argument', () => {
+    let square = function () { new Square("I'm not a number, throw error")}
+    expect(square).toThrowError('argument is not a number')
+  })
+
+  it('throws an error if instantiated with a negative number', () => {
+    let square = function () { new Square(-10)}
+    expect(square).toThrowError('size should be a positive number')
+  })
+
 })
